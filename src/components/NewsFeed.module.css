@@ -1,0 +1,29 @@
+.newsFeedContainer {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.newsSection {
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
+  flex-wrap: wrap;
+}
+
+.adSection {
+  padding-left: 20px;
+}
+
+.adSection h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.adItem {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
