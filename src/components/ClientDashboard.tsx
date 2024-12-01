@@ -68,7 +68,7 @@ const ClientDashboard: React.FC = () => {
     try {
       const response = await uploadMediaFile(formData);
       if (response.url) {
-        setForwardUrl(response.url);
+        setMediaUrl(response.url);
         setMessage({ text: "File uploaded successfully!", type: "success" });
       } else {
         setMessage({ text: "Failed to get file URL.", type: "error" });
@@ -82,8 +82,8 @@ const ClientDashboard: React.FC = () => {
     e.preventDefault();
     try {
       const newAd = await uploadAd(
-        forwardUrl,
         mediaUrl,
+        forwardUrl,
         centsPerView,
         centsPerClick,
         viewGoal
